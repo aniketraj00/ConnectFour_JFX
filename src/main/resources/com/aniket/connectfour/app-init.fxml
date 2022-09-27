@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane style="-fx-background-color: #8c03fc;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aniket.connectfour.Controller">
+   <children>
+      <VBox>
+         <children>
+            <Label prefHeight="38.0" prefWidth="600.0" text="Connect4" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="0.0" prefWidth="600.0" text="Enter the details and press the Play button to start the game." textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font></Label>
+            <Separator prefWidth="200.0" />
+            <HBox fillHeight="false" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="152.0" text="Choose Player 1 Marker:" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Label>
+                  <ColorPicker fx:id="player1Marker" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="player1Name" promptText="Enter Player 1 Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></TextField>
+            <HBox fillHeight="false" layoutX="10.0" layoutY="36.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="150.0" text="Choose Player 2 Marker:" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font></Label>
+                  <ColorPicker fx:id="player2Marker" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="player2Name" promptText="Enter Player 2 Name">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></TextField>
+            <HBox spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onPlayBtnClick" prefHeight="26.0" prefWidth="84.0" text="Play" />
+                  <Button mnemonicParsing="false" onAction="#onQuitBtnClick" prefWidth="84.0" text="Exit">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</StackPane>

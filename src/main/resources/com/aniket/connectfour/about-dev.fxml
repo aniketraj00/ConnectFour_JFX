@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="aboutDev" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea">
+   <children>
+      <Label alignment="TOP_LEFT" prefHeight="27.0" prefWidth="339.0" text="Aniket Raj">
+         <font>
+            <Font name="Segoe UI Light" size="22.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="136.0" prefWidth="214.0" text="A Computer Science Undergrad Student. Love to explore new techs and gadgets. Also a web and app development enthusiast. Like working on modern web development stacks like MERN." wrapText="true">
+         <VBox.margin>
+            <Insets left="5.0" right="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Segoe UI Historic" size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Label>
+      <Hyperlink text="Github: http://www.github.com/aniketraj00" underline="true" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Segoe UI Semibold" size="13.0" />
+         </font>
+      </Hyperlink>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

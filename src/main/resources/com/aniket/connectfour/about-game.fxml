@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.2-ea">
+   <children>
+      <HBox>
+         <children>
+            <VBox>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="32.0" prefWidth="149.0" text="Connect4">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin></Label>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="149.0" text="Copyright © 2022 XYZ" />
+               </children>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <Pane HBox.hgrow="ALWAYS">
+               <children>
+                  <TextArea editable="false" prefHeight="211.0" prefWidth="531.0" text="How to play:&#10;Player 1 and Player 2 drops a disc into any of the slots at the top of the grid. Players will alternate turns in this manner until someone gets four-in-a-row vertically, horizontally, or diagonally. &#10;&#10;Rules:&#10;1) Each player can only put one disc in at a time. &#10;2) The game ends if there is a four in a row or no other moves can be made. &#10;3) Which player will go first is decided randomly as soon as the game starts.&#10;4) Each player should alternate who goes first each time they play. For example, the first player of the first game will go second during the second game. &#10;" wrapText="true">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextArea>
+               </children></Pane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+   </padding>
+</StackPane>
